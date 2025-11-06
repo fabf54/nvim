@@ -32,7 +32,7 @@ vim.keymap.set({ 'i', 'v', 'n' }, '<C-f>', function()
 end, { noremap = true, silent = true })
 
 -- Literal search and replace
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- showing up diagnostics with newlines in a floating window
 vim.keymap.set({ "n" }, "<leader>sd", vim.diagnostic.open_float)
