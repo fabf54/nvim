@@ -8,6 +8,9 @@ vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
+	{ src = "https://github.com/stevearc/conform.nvim" },
+	{ src = "https://github.com/mfussenegger/nvim-lint" },
+	{ src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
   { src = "https://github.com/nvim-telescope/telescope.nvim" },
 	{ src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim" },
   { src = "https://github.com/stevearc/oil.nvim" },
@@ -19,6 +22,7 @@ require("plugins.theme")
 require("plugins.harpoon")
 require("plugins.treesitter")
 require("plugins.lsp")
+require("plugins.formatting")
 require("plugins.autocomp")
 require("plugins.telescope")
 require("plugins.oil")
