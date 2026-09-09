@@ -16,6 +16,7 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/oil.nvim" },
 	{ src = "https://github.com/folke/todo-comments.nvim" },
 	{ src = "https://github.com/folke/which-key.nvim" },
+	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 })
 
 require("vim-options")
@@ -30,3 +31,4 @@ require("plugins.todo-comments")
 require("plugins.telescope")
 require("plugins.oil")
 require("plugins.which-key")
+require("plugins.statusline")
