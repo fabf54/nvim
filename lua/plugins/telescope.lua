@@ -24,6 +24,7 @@ end
  
 local builtin = require("telescope.builtin")
 require("telescope").load_extension("fzf")
+require("telescope").load_extension("todo-comments")
  
 vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
 vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
