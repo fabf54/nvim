@@ -15,6 +15,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim" },
 	{ src = "https://github.com/stevearc/oil.nvim" },
 	{ src = "https://github.com/folke/todo-comments.nvim" },
+	{ src = "https://github.com/folke/which-key.nvim" },
 })
 
 require("vim-options")
@@ -28,3 +29,4 @@ require("plugins.autocomp")
 require("plugins.todo-comments")
 require("plugins.telescope")
 require("plugins.oil")
+require("plugins.which-key")

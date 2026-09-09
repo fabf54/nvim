@@ -56,7 +56,7 @@ end
 -- 	},
 -- })
  
-vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
-vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, {})
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show hover documentation" })
+vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename symbol" })
+vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, { desc = "Code action" })

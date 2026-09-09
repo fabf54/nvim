@@ -1,6 +1,6 @@
 vim.keymap.set({ 'i', 'v', 's' }, '<C-c>', '<Esc>', { noremap = true })
 
-vim.keymap.set('n', '<Leader>pv', vim.cmd.Ex)
+vim.keymap.set('n', '<Leader>pv', vim.cmd.Ex, { desc = "Open file browser" })
 
 -- moving lines in visual mode, nice
 -- remaps for staying in the middle on ctrl d/u for halfway jumps
@@ -32,7 +32,9 @@ vim.keymap.set({ 'i', 'v', 'n' }, '<C-f>', function()
 end, { noremap = true, silent = true })
 
 -- Literal search and replace
-vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {
+	desc = "Search and replace word",
+})
 
 -- showing up diagnostics with newlines in a floating window
-vim.keymap.set({ "n" }, "<leader>sd", vim.diagnostic.open_float)
+vim.keymap.set({ "n" }, "<leader>sd", vim.diagnostic.open_float, { desc = "Show diagnostics" })
